@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import TwitterIcon from './icons/TwitterIcon';
 import InstagramIcon from './icons/InstagramIcon';
 import LinkedInIcon from './icons/LinkedInIcon';
+import MailIcon from './icons/MailIcon';
 
 const SocialLink: React.FC<{ href: string; children: React.ReactNode }> = ({ href, children }) => (
     <motion.a 
@@ -57,14 +58,17 @@ const Footer: React.FC = () => {
                 </div>
 
                 <div className="flex items-center justify-center md:justify-end gap-6">
-                    <SocialLink href="#">
+                    <SocialLink href="https://x.com/indigolens_in">
                         <TwitterIcon />
                     </SocialLink>
-                    <SocialLink href="#">
+                    <SocialLink href="https://www.instagram.com/indigolens.in/">
                         <InstagramIcon />
                     </SocialLink>
-                    <SocialLink href="#">
+                    <SocialLink href="https://www.linkedin.com/company/indigolens/">
                         <LinkedInIcon />
+                    </SocialLink>
+                    <SocialLink href="mailto:team.indigolens@gmail.com">
+                        <MailIcon />
                     </SocialLink>
                 </div>
             </div>
