@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import TwitterIcon from './icons/TwitterIcon';
 import InstagramIcon from './icons/InstagramIcon';
 import LinkedInIcon from './icons/LinkedInIcon';
+import MailIcon from './icons/MailIcon';
 
 const NavLink: React.FC<{ href: string; children: React.ReactNode }> = ({ href, children }) => {
     return (
@@ -56,9 +57,10 @@ const Header: React.FC = () => {
                             <NavLink href="#payment">Pricing</NavLink>
                         </nav>
                         <div className="flex items-center gap-5 pl-6 ml-6 border-l border-indigo-brand/20">
-                           <SocialLink href="#"><TwitterIcon /></SocialLink>
-                           <SocialLink href="#"><InstagramIcon /></SocialLink>
-                           <SocialLink href="#"><LinkedInIcon /></SocialLink>
+                           <SocialLink href="https://x.com/indigolens_in"><TwitterIcon /></SocialLink>
+                           <SocialLink href="https://www.instagram.com/indigolens.in/"><InstagramIcon /></SocialLink>
+                           <SocialLink href="https://www.linkedin.com/company/indigolens/"><LinkedInIcon /></SocialLink>
+                           <SocialLink href="mailto:team.indigolens@gmail.com"><MailIcon /></SocialLink>
                         </div>
                     </div>
                     <div className="-mr-2 flex md:hidden">
@@ -90,9 +92,10 @@ const Header: React.FC = () => {
                         <a href="#payment" data-cursor-type="link" className="block px-3 py-2 rounded-md text-base font-medium text-soft-white/80 hover:text-white hover:bg-indigo-brand/20">Pricing</a>
                     </div>
                      <div className="flex justify-center items-center gap-6 pt-4 pb-4 border-t border-indigo-brand/20">
-                        <SocialLink href="#"><TwitterIcon /></SocialLink>
-                        <SocialLink href="#"><InstagramIcon /></SocialLink>
-                        <SocialLink href="#"><LinkedInIcon /></SocialLink>
+                        <SocialLink href="https://x.com/indigolens_in"><TwitterIcon /></SocialLink>
+                        <SocialLink href="https://www.instagram.com/indigolens.in/"><InstagramIcon /></SocialLink>
+                        <SocialLink href="https://www.linkedin.com/company/indigolens/"><LinkedInIcon /></SocialLink>
+                        <SocialLink href="mailto:team.indigolens@gmail.com"><MailIcon /></SocialLink>
                     </div>
                 </motion.div>
             )}
