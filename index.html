@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Indigo Lens — Viyana Solara | AI Video Editing & Creative Studio</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@700;800;900&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind Custom Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        indigo: {
+                            brand: '#3A0CA3',
+                        },
+                        neon: {
+                            blue: '#00F5FF',
+                        },
+                        violet: {
+                            brand: '#B5179E',
+                        },
+                        charcoal: '#080808',
+                        'soft-white': '#F6F8FA',
+                    },
+                    fontFamily: {
+                        sora: ['Sora', 'sans-serif'],
+                        inter: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                    animation: {
+                        'neon-pulse': 'neon-pulse 3s infinite ease-in-out',
+                        'gradient-pan': 'gradient-pan 10s infinite alternate',
+                        'aurora': 'aurora 8s infinite linear',
+                        'border-glow': 'border-glow 4s infinite ease-in-out',
+                        'move-particles': 'move-particles 20s linear infinite',
+                        'cursor-pulse': 'cursor-pulse 2s infinite ease-in-out',
+                    },
+                    keyframes: {
+                        'neon-pulse': {
+                            '0%, 100%': { boxShadow: '0 0 5px #00F5FF, 0 0 10px #00F5FF, 0 0 20px #B5179E, 0 0 30px #B5179E' },
+                            '50%': { boxShadow: '0 0 10px #00F5FF, 0 0 20px #00F5FF, 0 0 30px #3A0CA3, 0 0 40px #3A0CA3' },
+                        },
+                        'gradient-pan': {
+                           '0%': { backgroundPosition: '0% 50%' },
+                           '100%': { backgroundPosition: '100% 50%' },
+                        },
+                        'aurora': {
+                            '0%': { backgroundPosition: '0% 50%' },
+                            '50%': { backgroundPosition: '100% 50%' },
+                            '100%': { backgroundPosition: '0% 50%' },
+                        },
+                        'border-glow': {
+                            '0%, 100%': { borderColor: 'rgba(58, 12, 163, 0.3)' },
+                            '50%': { borderColor: 'rgba(0, 245, 255, 0.5)' },
+                        },
+                        'move-particles': {
+                           '0%': { backgroundPosition: '0 0' },
+                           '100%': { backgroundPosition: '150px 150px' },
+                        },
+                        'cursor-pulse': {
+                            '0%, 100%': { transform: 'scale(1)', opacity: 0.6 },
+                            '50%': { transform: 'scale(1.2)', opacity: 0.3 },
+                        },
+                    },
+                    backgroundSize: {
+                        '400%': '400% 400%',
+                    }
+                },
+            },
+        };
+    </script>
+    
+    <style>
+        /* Hide default cursor when custom cursor is active */
+        .hide-cursor {
+            cursor: none;
+        }
+
+        /* For custom scrollbar aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #080808;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #3A0CA3;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #B5179E;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24",
+    "three": "https://aistudiocdn.com/three@^0.181.0",
+    "@react-three/drei": "https://aistudiocdn.com/@react-three/drei@^10.7.6",
+    "gsap/": "https://aistudiocdn.com/gsap@^3.13.0/",
+    "gsap": "https://aistudiocdn.com/gsap@^3.13.0",
+    "@react-three/postprocessing": "https://aistudiocdn.com/@react-three/postprocessing@^3.0.4",
+    "@react-three/fiber": "https://aistudiocdn.com/@react-three/fiber@^9.4.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^0.20.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-charcoal text-soft-white font-inter">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
